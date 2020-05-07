@@ -5,4 +5,7 @@ split -b 10m was.20200507.log
 #...
 #xax
 
-grep 
+grep 11:14:26 x*
+#xav  . .. ..
+#xav  . .. ..
+#
