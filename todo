@@ -4,3 +4,24 @@ lsof가좋디만.
 이번 꺼...피트리없음
 
 초간단. 포트스캔.여러방법들.telnet.perl.httpurl
+
+
+#계산기가 필요한데, 
+
+이제는 별짓을 다한다. 폿팅. 이거 파일 다시 만들기.또는 이럭삭제 =>아니 포스팅하고 삭제
+#?$?드릴책 참고,거기 텔넷도 있을라나
+
+ cat n.dat | awk '{sum+=$1; print $0} END {print "sum =", sum}'
+1
+2
+3
+4
+5
+
+sum = 15
+
+export sum=0
+for n in `cat n.dat`;^Jdo^Jsum=`expr $sum + $n`^Jdone
+echo $sum
+15
+
