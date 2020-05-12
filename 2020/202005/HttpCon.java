@@ -20,7 +20,7 @@ public class HttpCon {
 
 		//Print Headers
 		Map<String, List<String>> headers = con.getHeaderFields();
-		System.out.println(headers.get(null).get(0));
+		System.out.println(headers.get(null).get(0)); //응답코드를 우선 출력
 
 		Iterator<String> iter = headers.keySet().iterator();
 		while(iter.hasNext()) {
@@ -30,6 +30,7 @@ public class HttpCon {
 			}
 			List<String> value = headers.get(key);
 			System.out.println(key + ": " + (value.size() == 1 ? value.get(0) : value));
+			//2개 이상인 경우 어떻게 표시해야 하나?
 		}
 		System.out.println();
 
