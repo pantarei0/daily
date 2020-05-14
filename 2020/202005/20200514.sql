@@ -19,7 +19,7 @@ COMMENT ON TABLE CO_SYS_LOG IS '시스템로그';
 
 INSERT INTO CO_SYS_LOG
 --SELECT * FROM CO_SYS_LOG_bak; --컬럼 순서가 맞지 않아 에러
-SELECT sys_seq
+SELECT sys_seq --새로 생성한 테이블의 컬럼 
 ,sys_nm
 ...
 ,sql_cntn
