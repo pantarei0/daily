@@ -10,7 +10,7 @@ for fn in files:
 		c = f.read()
 		if not 'ODINAME=\"'+fn.strip('ozr')+'odi' in c :
 			print('MISMATCH', '=>', fn)
-		if not os.path.exists(dir+'odi/'+fn.replace('.ozr', '.odi')):
+		if not os.path.exists(dir+'odi/'+fn.replace('.ozr', '.odi')): ######수정! 폿팅
 			print('NOTFOUND', '->', fn.replace('.ozr', '.odi'))
 			
 #MISMATCH => eformsample.ozr
