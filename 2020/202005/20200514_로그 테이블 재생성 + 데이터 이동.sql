@@ -1,4 +1,4 @@
---로그 테이블 재생성 + 데이터 이동
+--로그 테이블 재생성 + 데이터 이동 #폿팅
 
 --1
 ALTER TABLE "YBDS"."CO_SYS_LOG" RENAME TO CO_SYS_LOG_bak;
@@ -24,7 +24,7 @@ COMMENT ON TABLE CO_SYS_LOG IS '시스템로그';
 INSERT INTO CO_SYS_LOG
 --SELECT * FROM CO_SYS_LOG_bak; --컬럼 순서가 맞지 않아 에러
 SELECT sys_seq --새로 생성한 테이블의 컬럼 
-,sys_nm
+,sys_nm     컬럼이 추가되거나 삭제되면?
 ...
 ,sql_cntn
 FROM CO_SYS_LOG_bak; --536,439개 행 이(가) 삽입되었습니다.
