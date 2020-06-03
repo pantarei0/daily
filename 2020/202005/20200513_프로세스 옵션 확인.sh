@@ -1,3 +1,5 @@
 #서버 설정을 했다고 하는데 빠진게 있다. 옵션이 너무 길어서 찾기 불편
-$ ps -ef | grep "YBDS " | grep tmp
+$ ps -ef | grep "YBDS " | grep tmpdir  
 #헐 적용이 안되어 있다.
+
+#tr을 사용하면 옵션을 출력할 수도 있음.
